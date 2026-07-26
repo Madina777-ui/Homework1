@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Манипуляции</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .task {
+            margin: 30px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .description {
+            margin: 5px 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM</h1>
+
+    <!-- Задание 1 -->
+    <div class="task">
+        <h2>Задание 1: Скрытие и показ текста</h2>
+        <h1 id="heading1">Скрывающийся заголовок</h1>
+        <button id="toggleBtn">Скрыть</button>
+    </div>
+
+    <!-- Задание 2 -->
+    <div class="task">
+        <h2>Задание 2: Изменение стиля элемента</h2>
+        <p id="colorText">Этот текст изменит цвет при нажатии кнопки</p>
+        <button id="colorBtn">Изменить цвет</button>
+    </div>
+
+    <!-- Задание 3 -->
+    <div class="task">
+        <h2>Задание 3: Динамическое изменение текста</h2>
+        <h3 id="changeableHeading">Исходный текст заголовка</h3>
+        <button id="changeTextBtn">Изменить текст</button>
+    </div>
+
+    <!-- Задание 4 -->
+    <div class="task">
+        <h2>Задание 4: Поиск и изменение элементов по классу</h2>
+        <div class="description">Первый элемент с классом description</div>
+        <div class="description">Второй элемент с классом description</div>
+        <div>Элемент без класса</div>
+        <div class="description">Третий элемент с классом description</div>
+        <button id="changeAllBtn">Изменить все элементы</button>
+    </div>
+
+    <!-- Задание 5 -->
+    <div class="task">
+        <h2>Задание 5: Работа с querySelectorAll</h2>
+        <p class="description">Первый абзац с классом description</p>
+        <p>Абзац без класса</p>
+        <p class="description">Второй абзац с классом description</p>
+        <p class="other">Абзац с другим классом</p>
+        <button id="changeDescriptionsBtn">Изменить элементы description</button>
+    </div>
+
+    <!-- Задание 6 -->
+    <div class="task">
+        <h2>Задание 6: Добавление нового элемента в DOM</h2>
+        <div id="newElementsContainer"></div>
+        <button id="addElementBtn">Добавить элемент</button>
+    </div>
+
+    <!-- Задание 7 -->
+    <div class="task">
+        <h2>Задание 7: Удаление элемента</h2>
+        <p class="description">Первый элемент для удаления</p>
+        <p class="description">Второй элемент с классом description</p>
+        <p class="description">Третий элемент с классом description</p>
+        <button id="removeElementBtn">Удалить первый элемент</button>
+    </div>
+
+
+    <script src="hw-8.js"></script>
+</body>
+
+</html>
